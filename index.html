@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simulation</title>
+  <style type="text/css">
+    @keyframes fade {
+      from {background: black}
+      to {background: white;}
+    }
+
+    @keyframes fade-in {
+      from {opacity: 0}
+      to {opacity: 1}
+    }
+
+    .not-faded {
+      background: black;
+      border-radius: 50%;
+     /* animation-name: fade-in;
+      animation-duration: 0.3s;*/
+    }
+
+    .faded {
+      background: white;
+     /* animation-name: fade;
+      animation-duration: 0.3s;*/
+    }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="js/bundle.js"></script>
+</html>
