@@ -8,7 +8,6 @@ import * as timer from './timer'
 import * as _ from 'lodash'
 
 const store = createStore(reducer)
-
 timer.setStore(store)
 timer.run()
 
@@ -18,8 +17,8 @@ class Main extends React.Component {
     this.state = {}
     this.state['grid'] = grid;
     let tiles = [];
-    this.state.grid.forEach((faded, j) => {
-      tiles.push(<Tile store={store} key={_.uniqueId()} index={j} />)
+    this.state.grid.forEach((s,index) => {
+      tiles.push(<Tile store={store} key={_.uniqueId()} index={index} />)
     })
     this.state['tiles'] = tiles
   }
