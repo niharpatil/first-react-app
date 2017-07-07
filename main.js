@@ -6,6 +6,9 @@ import reducer from './reducers/index.js'
 import {grid, SIDE_LENGTH} from './initialState'
 import * as timer from './timer'
 import * as _ from 'lodash'
+import io from 'socket.io-client'
+
+const socket = io('localhost:3000')
 
 const store = createStore(reducer)
 timer.setStore(store)
