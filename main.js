@@ -1,7 +1,7 @@
 import * as React from 'react'
 import ReactDOM from 'react-dom'
 import {createStore} from 'redux'
-import Tile from './components/tile.jsx'
+import Tile from './components/tile.js'
 import reducer from './reducers/index.js'
 import {grid, SIDE_LENGTH} from './initialState'
 import * as timer from './timer'
